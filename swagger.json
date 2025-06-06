@@ -5,7 +5,7 @@
     "description": "API for managing food items and utensils",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "project-2-part-1.onrender.com",
   "basePath": "/",
   "tags": [
     {
