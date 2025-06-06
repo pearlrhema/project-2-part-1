@@ -44,7 +44,7 @@ const validateUtensil = (req, res, next) => {
   const rules = {
     productName: 'required|string',
     category: 'required|string',
-    imageSource: 'required|url',
+    imageSource: 'required|string',
     description: 'required|string',
     price: 'required|numeric',
     availability: 'required|string',

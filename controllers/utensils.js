@@ -38,11 +38,11 @@ const createUtensil = async (req, res) => {
   // #swagger.description = 'Create a new utensil'
   const newUtensil = {
     productName: req.body.productName,
-    category: req.boody.category,
+    category: req.body.category,
     imageSource: req.body.imageSource,
     description: req.body.description,
     price: req.body.price,
-    availabilty: req.body.availabilty,
+    availability: req.body.availability,
     brand: req.body.brand
   };
 
@@ -65,11 +65,11 @@ const updateUtensil = async (req, res) => {
 
   const updatedUtensil = {
     productName: req.body.productName,
-    category: req.boody.category,
+    category: req.body.category,
     imageSource: req.body.imageSource,
     description: req.body.description,
     price: req.body.price,
-    availabilty: req.body.availabilty,
+    availability: req.body.availability,
     brand: req.body.brand
   };
 

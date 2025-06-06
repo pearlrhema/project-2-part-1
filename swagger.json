@@ -5,7 +5,7 @@
     "description": "API for managing food items and utensils",
     "version": "1.0.0"
   },
-  "host": "project-2-part-1.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "tags": [
     {
@@ -100,6 +100,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -256,6 +259,9 @@
                 "productName": {
                   "example": "any"
                 },
+                "category": {
+                  "example": "any"
+                },
                 "imageSource": {
                   "example": "any"
                 },
@@ -265,7 +271,7 @@
                 "price": {
                   "example": "any"
                 },
-                "availabilty": {
+                "availability": {
                   "example": "any"
                 },
                 "brand": {
@@ -278,6 +284,9 @@
         "responses": {
           "201": {
             "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request"
           },
           "500": {
             "description": "Internal Server Error"
@@ -338,6 +347,9 @@
                 "productName": {
                   "example": "any"
                 },
+                "category": {
+                  "example": "any"
+                },
                 "imageSource": {
                   "example": "any"
                 },
@@ -347,7 +359,7 @@
                 "price": {
                   "example": "any"
                 },
-                "availabilty": {
+                "availability": {
                   "example": "any"
                 },
                 "brand": {
