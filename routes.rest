@@ -1,0 +1,38 @@
+//LOCAL HOST
+### GET ALL ITEMS
+GET http://localhost:3000/items
+
+### GET ITEM BY ID
+GET http://localhost:3000/items/68404ce8a6a0a7d1b4c84109
+
+### CREATE ITEM
+POST http://localhost:3000/items http/1.1
+Content-Type: application/json
+
+{
+  "foodName": "Rice",
+  "category": "Grain",
+  "imageUrl": "http://example.com/rice.jpg",
+  "description": "White long-grain rice",
+  "price": 15.99,
+  "availability": "true",
+  "brand": "Mama's Choice"
+}
+
+
+### UPDATE ITEM
+PUT http://localhost:3000/items/6835e085fc921c07740e18b2
+Content-Type: application/json
+
+{
+  "foodName": "Jollof Rice",
+  "category": "Dinner",
+  "imageUrl": "https://www.lacademie.com/wp-content/uploads/2022/02/jollof-rice-1.jpg",
+  "description": "If you are looking for the best Nigerian rice dish, our Jollof Rice is an ideal choice, give it a try and you'll be amazed",
+  "price": 2067,
+  "availability": "yes",
+  "brand": "Foreign"
+}
+
+### DELETE ITEM
+DELETE http://localhost:3000/items/6835e085fc921c07740e18b2
