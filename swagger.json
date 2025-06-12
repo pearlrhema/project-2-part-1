@@ -5,7 +5,7 @@
     "description": "API for managing food items and utensils",
     "version": "1.0.0"
   },
-  "host": "project-2-part-1.onrender.com",
+  "host": "localhost:3000",
   "basePath": "/",
   "tags": [
     {
@@ -22,15 +22,28 @@
     "https"
   ],
   "paths": {
-    "/": {
+    "/login": {
       "get": {
         "tags": [
-          "Godwin Essien Items Project"
+          "GitHub Authentication"
         ],
-        "description": "",
+        "description": "Login with GitHub",
         "responses": {
-          "200": {
-            "description": "OK"
+          "default": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/logout": {
+      "get": {
+        "tags": [
+          "GitHub Authentication"
+        ],
+        "description": "Logout from GitHub",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -103,6 +116,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
@@ -192,6 +208,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
           "404": {
             "description": "Not Found"
           },
@@ -219,6 +238,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
@@ -287,6 +309,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "500": {
             "description": "Internal Server Error"
@@ -376,6 +401,9 @@
           "400": {
             "description": "Bad Request"
           },
+          "401": {
+            "description": "Unauthorized"
+          },
           "404": {
             "description": "Not Found"
           },
@@ -403,6 +431,9 @@
           },
           "400": {
             "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
           },
           "404": {
             "description": "Not Found"
